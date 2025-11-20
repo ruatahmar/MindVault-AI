@@ -12,3 +12,10 @@ class UserLogin(UserBase):
 
 class Post(BaseModel):
     note: str
+
+class ResetRequest(BaseModel):
+    email: str
+
+class ResetPasswordRequest(BaseModel):
+    token: str
+    new_password: str
