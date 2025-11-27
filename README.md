@@ -9,7 +9,7 @@ A note-taking REST API built with **FastAPI**, featuring secure authentication, 
 - **JWT authentication** with access & refresh tokens
 - Tokens stored in **cookies** for secure session handling
 - **AI-powered summaries** of notes via Gemini API
-- **Email + password reset** (work in progress)
+- **Email + password reset**
 - Built with a clean, modular structure using FastAPI
 
 ---
