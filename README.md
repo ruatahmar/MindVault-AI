@@ -66,22 +66,7 @@ A note-taking REST API built with **FastAPI**, featuring secure authentication, 
   ```bash
   pip install -r requirements.txt
   ```
-4. Add environment variables (.env file):
-  ```bash
-  # Database (Postgres via Neon)
-   DATABASE_URL=postgresql://neondb_owner:<password>@<host>/<dbname>?sslmode=require&channel_binding=require
-
-   # JWT / Tokens
-   ACCESS_TOKEN_SECRET_KEY=YOURKEY
-   ACCESS_TOKEN_EXPIRE_MINUTES=60
-   REFRESH_TOKEN_SECRET_KEY=YOURKEY
-   REFRESH_TOKEN_EXPIRE_DAYS=10
-   RESET_TOKEN_SECRET_KEY=YOURKEY
-   JWT_ALGORITHM=HS256
-   # Gemini AI
-
-   GEMINI_API_KEY=your_gemini_api_key
-  ```
+4. Add environment variables (.env file). Refer to config.py for this.
 5. Run the server:
   ```bash
   uvicorn main:app --reload
