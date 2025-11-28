@@ -7,10 +7,14 @@ client = genai.Client(api_key=settings.GEMINI_API_KEY)
 def get_summary(note: str):
     response = client.models.generate_content_stream(
         model="gemini-2.5-flash", 
-        contents=[note,"Give me a Smart Summarization of this long note"]
+        contents=[note,"Give me a Smart Summarization of this text, no matter how long or short and dont add no fluff just straight give the summary and dont say anything else"]
     )
+    full_text = ""
     for chunk in response:
-        print(chunk.text, end="")
+        if chunk.candidates and chunk.candidates[0].content.parts:
+            full_text += chunk.candidates[0].content.parts[0].text
+    
+    return full_text
 
 def get_tags(note: str):
     response = client.models.generate_content_stream(
