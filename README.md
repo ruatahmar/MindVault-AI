@@ -51,12 +51,28 @@ A note-taking REST API built with **FastAPI**, featuring secure authentication, 
 ---
 
 ## 🚀 How to Run
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/mindvault-ai.git
-   cd mindvault-ai
-   ```
-2. Create & activate a virtual environment:
+1. Download/ Fork the repository :
+   - Option 1: Download ZIP
+   
+     1. Go to the GitHub repository page.
+   
+     2. Click Code → Download ZIP
+   
+     3. Extract the ZIP to your local machine
+   
+   - Option 2: Fork the Repository
+   
+     1. Click Fork in the GitHub repo page
+   
+     2. Clone your fork using HTTPS (or SSH):
+   
+     ```bash
+     git clone https://github.com/your-username/mindvault-ai.git
+      cd mindvault-ai
+     ```
+   Using HTTPS avoids SSH key issues that often prevent cloning.
+   
+3. Create & activate a virtual environment:
   ```bash
   python -m venv venv
   source venv/bin/activate   # Linux/Mac
