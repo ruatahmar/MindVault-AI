@@ -4,7 +4,7 @@ A note-taking REST API built with **FastAPI**, featuring secure authentication, 
 
 ---
 
-## 🚀 Features
+## Features
 - **CRUD operations** for posts/notes (Create, Read, Update, Delete)
 - **JWT authentication** with access & refresh tokens
 - Tokens stored in **cookies** for secure session handling
@@ -14,7 +14,7 @@ A note-taking REST API built with **FastAPI**, featuring secure authentication, 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Framework**: FastAPI
 - **Auth**: JWT (access + refresh tokens), cookies
 - **Database**: Neon (PostgreSQL)
@@ -23,7 +23,7 @@ A note-taking REST API built with **FastAPI**, featuring secure authentication, 
 
 ---
 
-## 📂 API Endpoints
+## API Endpoints
 
 ### Authentication
 - `POST /auth/register` → Register a new user  
@@ -43,14 +43,14 @@ A note-taking REST API built with **FastAPI**, featuring secure authentication, 
 
 ---
 
-## 🔑 Authentication Flow
+## Authentication Flow
 - **JWT Access Token** (short-lived) stored in cookies  
 - **JWT Refresh Token** (long-lived) used to renew access tokens  
 - Middleware protects routes and verifies tokens  
 
 ---
 
-## 🚀 How to Run
+## How to Run
 1. Download/ Fork the repository :
    - Option 1: Download ZIP
    
